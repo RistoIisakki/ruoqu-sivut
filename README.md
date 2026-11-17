@@ -6,3 +6,8 @@ Ruoqun verkkosivut (ruoqu.fi), julkaistaan GitHub Pagesilla.
 `python3 tyokalut/vie_sivut.py ../ruoqu-sivut`. Sivusto on tarkoituksella suppea (yleistieto).
 
 Sivustolla ei ole skriptejä, ulkoisia fontteja, evästeitä eikä analytiikkaa.
+
+Julkaisu: Settings → Pages → Deploy from a branch (main, /). Oma verkkotunnus ruoqu.fi:
+Zonerin DNS:ään A-tietueet `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+ja CNAME `www` → ristoiisakki.github.io. Sitten Pagesissa Custom domain = ruoqu.fi ja Enforce HTTPS.
+Verkkotunnus vahvistetaan GitHubin TXT-tietueella (Settings → Pages → Verified domains).
