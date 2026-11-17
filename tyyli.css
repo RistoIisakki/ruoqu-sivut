@@ -1,0 +1,48 @@
+:root{
+  --tausta:#F2EEEF;--pinta:#FFFFFF;--pinta2:#F7F4F5;--teksti:#1E1418;--teksti2:#45383D;--himmea:#6E6166;
+  --raja:#E3DADD;--brandi:#C8264F;--brandi-teksti:#A81E42;--brandi-vaalea:#FDE8EE;--vihrea:#0F6B47;--vihrea-taust:#E3F2EA;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--tausta);color:var(--teksti);
+  font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--brandi-teksti)}
+.sisus{max-width:720px;margin:0 auto;padding:0 20px}
+header{padding:20px 0}
+header .sisus{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--brandi);text-decoration:none;font-weight:700;font-size:22px;letter-spacing:-.02em}
+.logo span{color:var(--teksti)}
+.merkki{width:32px;height:32px}
+nav{display:flex;gap:18px;font-size:15px}
+nav a{color:var(--teksti2);text-decoration:none}
+nav a:hover,nav a[aria-current]{color:var(--brandi-teksti)}
+.sankari{padding:40px 0 24px}
+.lappu{display:inline-block;background:var(--brandi-vaalea);color:var(--brandi-teksti);font-size:14px;font-weight:600;
+  padding:4px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:clamp(32px,7vw,48px);line-height:1.1;letter-spacing:-.03em;margin:0 0 16px}
+.johdanto{font-size:19px;color:var(--teksti2);margin:0 0 8px;max-width:34em}
+section{padding:24px 0}
+h2{font-size:22px;letter-spacing:-.01em;margin:32px 0 8px}
+section>h2:first-child{margin-top:0}
+.askeleet{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px;counter-reset:a}
+.askeleet li{background:var(--pinta);border:1px solid var(--raja);border-radius:16px;padding:16px 18px 16px 60px;position:relative;counter-increment:a}
+.askeleet li::before{content:counter(a);position:absolute;left:18px;top:16px;width:28px;height:28px;border-radius:50%;
+  background:var(--brandi);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
+.askeleet strong{display:block}
+.kortit{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:16px}
+.kortti{background:var(--pinta);border:1px solid var(--raja);border-radius:16px;padding:16px 18px}
+.kortti h3{font-size:17px;margin:0 0 4px}
+.kortti p{margin:0;color:var(--teksti2);font-size:15px}
+.huom{background:var(--vihrea-taust);border-radius:16px;padding:16px 18px;color:var(--teksti)}
+.asiakirja{background:var(--pinta);border:1px solid var(--raja);border-radius:16px;padding:8px 24px 24px;margin:8px 0 24px}
+.asiakirja h2{font-size:19px;margin:28px 0 6px}
+.asiakirja p,.asiakirja li{color:var(--teksti2)}
+.asiakirja ul{padding-left:22px}
+.paivitetty{color:var(--himmea);font-size:15px}
+details{background:var(--pinta);border:1px solid var(--raja);border-radius:14px;padding:14px 18px;margin:10px 0}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--teksti2);margin:10px 0 0}
+footer{border-top:1px solid var(--raja);margin-top:40px;padding:24px 0 40px;color:var(--himmea);font-size:15px}
+footer nav{flex-wrap:wrap;margin-bottom:8px}
+@media (max-width:520px){header .sisus{flex-direction:column;align-items:flex-start;gap:10px}}
