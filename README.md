@@ -3,7 +3,7 @@
 Ruoqun verkkosivut (ruoqu.fi), julkaistaan GitHub Pagesilla.
 
 Älä muokkaa HTML-tiedostoja käsin: ne rakennetaan sovelluksen yksityisestä reposta komennolla
-`python3 tyokalut/vie_sivut.py ../ruoqu-sivut`. Sivusto on tarkoituksella suppea (yleistieto).
+`python3 tyokalut/vie_sivut.py ../ruoqu-sivut`. Sivusto on tarkoituksella minimi julkaisuun asti: ei ominaisuuksien kuvausta (perustaja 17.11.).
 
 Sivustolla ei ole skriptejä, ulkoisia fontteja, evästeitä eikä analytiikkaa.
 
