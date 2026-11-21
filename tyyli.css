@@ -43,6 +43,12 @@ section>h2:first-child{margin-top:0}
 details{background:var(--pinta);border:1px solid var(--raja);border-radius:14px;padding:14px 18px;margin:10px 0}
 summary{font-weight:600;cursor:pointer}
 details p{color:var(--teksti2);margin:10px 0 0}
+.tiedot{display:grid;grid-template-columns:minmax(110px,max-content) 1fr;gap:8px 18px;margin:16px 0 0;
+  background:var(--pinta);border:1px solid var(--raja);border-radius:16px;padding:16px 18px}
+.tiedot dt{font-weight:600}
+.tiedot dd{margin:0;color:var(--teksti2)}
+.kysymykset h2{font-size:19px;margin:26px 0 6px}
+.kysymykset p{color:var(--teksti2);margin:0}
 footer{border-top:1px solid var(--raja);margin-top:40px;padding:24px 0 40px;color:var(--himmea);font-size:15px}
 footer nav{flex-wrap:wrap;margin-bottom:8px}
 @media (max-width:520px){header .sisus{flex-direction:column;align-items:flex-start;gap:10px}}
